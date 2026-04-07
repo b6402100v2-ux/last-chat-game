@@ -1,0 +1,53 @@
+body {
+  background:#ddd;
+  display:flex;
+  justify-content:center;
+  padding:20px;
+  font-family:sans-serif;
+}
+
+.phone {
+  width:360px;
+  height:640px;
+  background:#fff;
+  border-radius:20px;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+}
+
+#header {
+  padding:10px;
+  background:#4a90e2;
+  color:white;
+  text-align:center;
+}
+
+#chat {
+  flex:1;
+  padding:10px;
+  overflow-y:auto;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.msg {
+  padding:10px;
+  border-radius:15px;
+  max-width:70%;
+  animation:fade 0.5s;
+}
+
+.left { background:#eee; align-self:flex-start; }
+.right { background:#cde; align-self:flex-end; }
+
+@keyframes fade {
+  from {opacity:0; transform:translateY(10px);}
+  to {opacity:1; transform:translateY(0);}
+}
+
+button {
+  margin:5px;
+  padding:8px;
+}
