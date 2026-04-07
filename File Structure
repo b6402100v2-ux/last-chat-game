@@ -1,0 +1,7 @@
+last-chat-game/
+├─ index.js
+├─ package.json
+└─ public/
+    ├─ index.html
+    ├─ style.css
+    └─ client.js
