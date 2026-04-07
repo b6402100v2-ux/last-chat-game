@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Last Chat Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="phone">
+
+  <div id="header">Connecting...</div>
+
+  <div id="chat"></div>
+
+  <div id="timer"></div>
+
+  <div id="question" style="display:none;">
+    <p>Did you understand the chat?</p>
+    <button onclick="submitHP(1)">Yes</button>
+    <button onclick="submitHP(0)">No</button>
+  </div>
+
+  <div id="vote" style="display:none;">
+    <p>Who is the killer?</p>
+    <button onclick="vote('Jamie')">Jamie</button>
+    <button onclick="vote('Taylor')">Taylor</button>
+    <button onclick="vote('Chris')">Chris</button>
+    <button onclick="vote('Morgan')">Morgan</button>
+  </div>
+
+  <div id="result"></div>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="client.js"></script>
+
+</body>
+</html>
